@@ -1,0 +1,4 @@
+"0","percentages %>%"
+"0","  filter(case_types == ""confirmed_global"") %>%"
+"0","  arrange(desc(total_cases)) %>%"
+"0","  slice(1:20)"

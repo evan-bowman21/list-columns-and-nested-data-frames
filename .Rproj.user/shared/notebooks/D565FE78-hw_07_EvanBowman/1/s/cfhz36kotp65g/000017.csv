@@ -1,0 +1,4 @@
+"0","df_allp %>% group_by(Country_Region) %>%"
+"0","  summarise(unique_country_states = n_distinct(!(Country_Region %in% Country_State))) %>%"
+"0","  filter(unique_country_states > 1) %>%"
+"0","  arrange(desc(unique_country_states))"

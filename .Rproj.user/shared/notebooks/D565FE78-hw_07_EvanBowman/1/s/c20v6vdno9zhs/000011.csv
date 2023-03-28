@@ -1,0 +1,4 @@
+"0","df_pop <- df_pop %>%"
+"0","  filter(Time == ""2022"", Variant == ""No change"", !is.na(ISO3_code)) %>%"
+"0","  select(Time, Location, ISO3_code, PopTotal, PopDensity)"
+"0","head(df_pop)"

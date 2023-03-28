@@ -1,0 +1,3 @@
+"0","df_allp <- left_join(df_all, df_pop, by = c(""ISO3_code"" = ""ISO3_code"")) %>%"
+"0","  select(-Location)"
+"0","head(df_allp)"

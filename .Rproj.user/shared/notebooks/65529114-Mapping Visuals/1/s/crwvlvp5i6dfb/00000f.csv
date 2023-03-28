@@ -1,0 +1,5 @@
+"0","hsei_medianHouse %>%"
+"0","  filter(HSEI > 0) %>%"
+"0","ggplot(aes(fill = HSEI)) +"
+"0","    geom_sf(aes(geometry = geometry), color = NA) +"
+"0","    scale_fill_viridis_c()"

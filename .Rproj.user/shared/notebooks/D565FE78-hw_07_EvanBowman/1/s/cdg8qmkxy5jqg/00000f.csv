@@ -1,0 +1,5 @@
+"0","sum(countries_pop$PopTotal) / sum(df_pop$PopTotal) * 100"
+"1","[1]"
+"1"," 0.3089145"
+"1","
+"

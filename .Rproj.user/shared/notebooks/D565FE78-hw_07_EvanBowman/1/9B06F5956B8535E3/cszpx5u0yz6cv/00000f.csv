@@ -1,0 +1,5 @@
+"0","df_long <- df %>%"
+"0","  mutate(data = map(data, ~pivot_longer(data = ., cols = contains(""/""),"
+"0","                                        names_to = ""Date"","
+"0","                                        values_to = ""Daily_Total"","
+"0","                                        values_transform = list(Date = mdy))))"

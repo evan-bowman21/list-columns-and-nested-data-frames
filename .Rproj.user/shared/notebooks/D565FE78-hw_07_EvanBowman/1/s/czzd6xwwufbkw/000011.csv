@@ -1,0 +1,3 @@
+"0","df <- df %>%"
+"0","  mutate(vars = map(df$data, names))"
+"0","df$vars <- map(df$vars, ~unlist(.)[1:15])"

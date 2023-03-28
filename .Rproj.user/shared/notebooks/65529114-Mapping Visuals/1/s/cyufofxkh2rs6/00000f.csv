@@ -1,0 +1,2 @@
+"0","hsei <- read_csv(""data/Heat_Sensitivity_Exposure_Index.csv"", show_col_types = F)"
+"0","tracts <- read_sf(""data/Census_Tracts_in_2020"")"

@@ -1,0 +1,2 @@
+"0","df <- df %>%"
+"0","  mutate(case_types = as.factor(str_extract(file_names, ""[:alpha:]*_[gU][:alpha:]*"")))"

@@ -1,0 +1,2 @@
+"0","df <- df %>%"
+"0","  mutate(data = map(url, ~ read_csv(., show_col_types = F)))"

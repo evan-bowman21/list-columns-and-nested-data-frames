@@ -1,0 +1,2 @@
+"0","df_pop <- vroom::vroom(""data/WPP2022_TotalPopulationBySex.csv.zip"", show_col_types = F)"
+"2","Multiple files in zip: reading 'WPP2022_TotalPopulationBySex.csv'"

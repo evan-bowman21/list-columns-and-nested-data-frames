@@ -1,0 +1,6 @@
+"0","percentages <- df_allp %>%"
+"0"," group_by(Country_Region, Continent, case_types, rank_p, rank_d) %>%"
+"0"," summarise(total_cases = max(Daily_Total), total_percent = total_cases/(last(PopTotal)*1000)*100) %>%"
+"0","  ungroup()"
+"2","`summarise()` has grouped output by 'Country_Region', 'Continent', 'case_types', 'rank_p'. You can override using the `.groups` argument."
+"0","head(percentages)"

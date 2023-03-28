@@ -1,0 +1,4 @@
+"0","last_seven <- map(df_long$data, ~filter(., Country_Region == ""US"")) "
+"0","map(last_seven, ~tail(., 7))"
+"1","[[1]]
+"

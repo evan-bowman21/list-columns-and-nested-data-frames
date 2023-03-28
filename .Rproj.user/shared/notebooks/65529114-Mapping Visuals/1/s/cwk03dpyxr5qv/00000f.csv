@@ -1,0 +1,6 @@
+"0","library(tidycensus)"
+"0","library(keyring)"
+"0","key_set(""API_KEY_CENSUS"")"
+"2","Error in b_macos_set(self, private, service, username, keyring, prompt) : 
+  Aborted setting keyring key
+"

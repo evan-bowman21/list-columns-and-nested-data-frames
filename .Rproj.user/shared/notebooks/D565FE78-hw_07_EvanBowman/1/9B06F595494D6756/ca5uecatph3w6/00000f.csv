@@ -1,0 +1,2 @@
+"0","df <- df %>%"
+"0","  mutate(url = str_c(url_in, file_names, sep = """"))"

@@ -1,0 +1,4 @@
+"0","df_all <- df_long %>%"
+"0","  unnest(cols = data) %>%"
+"0","  ungroup()"
+"0","head(df_all)"

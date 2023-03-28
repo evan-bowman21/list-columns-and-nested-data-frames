@@ -1,0 +1,4 @@
+"0","tracts <- read_sf(""data/Census_Tracts_in_2020"")"
+"0",""
+"0","tracts_clean <- tracts %>% "
+"0","  st_transform(4326)"

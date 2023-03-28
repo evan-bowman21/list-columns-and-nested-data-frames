@@ -1,0 +1,4 @@
+"0","df_pop <- df_pop %>%"
+"0","  mutate(rank_p = min_rank(desc(PopTotal)),"
+"0","         rank_d = min_rank(desc(PopDensity)))"
+"0","head(df_pop)"

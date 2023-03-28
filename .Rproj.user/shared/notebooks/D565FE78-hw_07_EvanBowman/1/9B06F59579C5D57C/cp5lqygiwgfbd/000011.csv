@@ -1,0 +1,11 @@
+"0","    library(countrycode)"
+"0","  #?countrycode::countrycode"
+"0","    "
+"0","  df_long <-  df_long %>%"
+"0","  mutate(data = map(data, ~mutate(., Continent = countrycode(Country_Region,"
+"0","                                               origin = ""country.name"","
+"0","                                               destination = ""continent""))))"
+"2","Warning: Some values were not matched unambiguously: Antarctica, Diamond Princess, Kosovo, Micronesia, MS Zaandam, Summer Olympics 2020, Winter Olympics 2022
+"
+"2","Warning: Some values were not matched unambiguously: Antarctica, Diamond Princess, Kosovo, Micronesia, MS Zaandam, Summer Olympics 2020, Winter Olympics 2022
+"

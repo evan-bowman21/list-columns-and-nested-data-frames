@@ -1,0 +1,6 @@
+"0",""
+"0","# Rank_d"
+"0","df_pop %>%"
+"0","  select(Location, rank_d) %>%"
+"0","  arrange(rank_d) %>%"
+"0","  slice(1:10)"
