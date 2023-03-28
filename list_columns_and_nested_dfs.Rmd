@@ -5,6 +5,7 @@ date: "`r Sys.Date()`"
 output:
   html_document:
     number_sections: yes
+  word_document: default
   pdf_document: default
 ---
 
@@ -15,7 +16,7 @@ knitr::opts_chunk$set(fig.align  = "center",
                       cache = FALSE)
 ```
 
-```{r}
+```{r, include=FALSE}
 suppressMessages(library(tidyverse))
 suppressMessages(library(purrr))
 suppressMessages(library(lubridate))
@@ -155,13 +156,11 @@ Each row represents the cumulative sum of confirmed Covid cases and Covid deaths
 
 # Add Continents 
 1.  Use `map()` to add a new variable called `Continent` to each data frame in `dfr_long$data`.  
-  - Hint: use the package {countrycode} to get the continents. If you don't have it already, **use the console** to install. 
   - Then load package {countrycode} and look at help for `countrycode::countrycode`
   - You will get some warning messages about ambiguous values which you will fix in the next step.
 
     ```{r, countrycode_lib}
     library(countrycode)
-  #?countrycode::countrycode
     
   df_long <-  df_long %>%
   mutate(data = map(data, ~mutate(., Continent = countrycode(Country_Region,
@@ -201,8 +200,7 @@ df_all <- df_long %>%
 head(df_all)
 ```
 
-2. Remove the `df` and `df_long` data frames from the global environment.
-```{r}
+```{r, include=FALSE}
 rm(df)
 rm(df_long)
 ```
@@ -280,8 +278,6 @@ df_pop <- semi_join(df_pop, df_all, by = c("ISO3_code" = "ISO3_code"))
 ```
 
 - Add variables to `df_pop` for the rank for each location for population (`rank_p`) and the rank for population density (`rank_d`). 
-- Calculate rank using `dplyr:min_rank()` so the country with the largest value is number 1 for that variable. 
-- Save to `df_pop`. 
 ```{r}
 df_pop <- df_pop %>%
   mutate(rank_p = min_rank(desc(PopTotal)),
